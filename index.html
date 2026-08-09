@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas — TP Clase 13 (DOM)</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+      <div class="app">
+        <div id="fecha"></div>
+        
+    <h1>Mi Lista de Tareas</h1>
+    <p class="sub">TP Clase 13 · El DOM</p>
+
+    <!-- input + botón para agregar -->
+    <div class="fila">
+      <input id="nuevaTarea" type="text" placeholder="Escribí una tarea..." />
+      <button id="agregar">Agregar</button>
+    </div>
+
+    <!-- acá se van a ir agregando las tareas (las crea el JS) -->
+    <ul id="lista"></ul>
+
+    <!-- contador de tareas -->
+    <p id="contador">Tareas: 0</p>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
