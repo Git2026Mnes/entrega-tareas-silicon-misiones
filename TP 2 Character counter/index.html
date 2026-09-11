@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Character Counter</h3>
+        <button>Ligth</button>
+    </header>
+    <!--PASO 1 de la estrctura HTML-->
+    <main>
+        <h1>Analyzer your text in real time</h1>
+        <section>
+            <form>
+                <textarea 
+                            id="textarea-character-counter"
+                            name="w3review">00
+                </textarea>
+                <!--agregue esto para limitar a 280 caracteres-->
+                <p>Text Words Remaining: <span id="text-words-remaining">280</span></p>
+                
+                <div>
+                    <!--TODO - Agrega funcionalidad con exclude space -->
+                    <input type="checkbox" id="input-exclude-space" name="input-exclude-space">
+                    <label for="input-exclude-space">Exclude spaces</label>
+
+                    <!--TODO - Agregar funcionalidad de set character limit-->
+                    <input type="checkbox" id="input-set-character-limit" name="input-set-character-limit">
+                    <label for="input-set-character-limit">Set Character Limit</label>
+            
+                    <p>
+                        Aprox reading times: <span id='text-reading-time'> TEXTO VARIABLE</span>
+                    </p>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div>
+                <span id="text-total-characters">00</span>
+                <p>Total Character</p>
+            </div>    
+            <div>
+                <span id="text-word-cound">00</span>
+                <p>Word Count</p>
+            </div>
+            <div>
+                <span>00</span>
+                <p>Sentence Count</p>
+            </div>
+        </section>
+    </main>
+    
+    <!--LOS ARCHIVOS DE "LIBRERIA" ANTES-->
+    <script src="button.js" defer></script>
+
+    <!--EL ARCHIVO PRINCIPAL AL FINAL-->
+    <script src="app.js" defer></script>
+</body>
+</html>
